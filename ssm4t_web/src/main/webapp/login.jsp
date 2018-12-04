@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>数据 - AdminLTE2定制版 | Log in</title>
+<title>Login</title>
 
 <meta
 	content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
@@ -27,13 +27,13 @@
 <body class="hold-transition login-page">
 	<div class="login-box">
 		<div class="login-logo">
-			<a href="all-admin-index.html"><b>ITCAST</b>后台管理系统</a>
+			<a href="all-admin-index.html"><b>RayYu</b>后台管理系统</a>
 		</div>
 		<!-- /.login-logo -->
 		<div class="login-box-body">
 			<p class="login-box-msg">登录系统</p>
 
-			<form action="${pageContext.request.contextPath}/login" method="post">
+			<form action="${pageContext.request.contextPath}/login.jsp" method="post">
 				<div class="form-group has-feedback">
 					<input type="text" name="username" class="form-control"
 						placeholder="用户名"> <span
@@ -47,7 +47,7 @@
 				<div class="row">
 					<div class="col-xs-8">
 						<div class="checkbox icheck">
-							<label><input type="checkbox"> 记住 下次自动登录</label>
+							<label><input type="checkbox">自动登录</label>
 						</div>
 					</div>
 					<!-- /.col -->
